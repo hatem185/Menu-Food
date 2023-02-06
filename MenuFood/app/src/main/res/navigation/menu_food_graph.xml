@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_food_graph"
+    app:startDestination="@id/menuFood">
+
+    <fragment
+        android:id="@+id/menuFood"
+        android:name="com.example.menufood.MenuFood"
+        android:label="Menu Food"
+        tools:layout="@layout/fragment_menu_food" />
+</navigation>
