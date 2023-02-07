@@ -41,7 +41,7 @@ class Settings : Fragment(R.layout.fragment_settings) {
                     else -> 16f
                 }
             )
-            Toast.makeText(context, "The text is change!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "The text size is change!", Toast.LENGTH_SHORT).show()
         }
     }
 
