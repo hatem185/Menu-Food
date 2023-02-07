@@ -7,7 +7,21 @@
 
     <fragment
         android:id="@+id/menuFood"
-        android:name="com.example.menufood.MenuFood"
+        android:name="com.example.menufood.ui.food.MenuFood"
         android:label="Menu Food"
-        tools:layout="@layout/fragment_menu_food" />
+        tools:layout="@layout/fragment_menu_food" >
+        <action
+            android:id="@+id/action_menuFood_to_detailsFoodItem"
+            app:destination="@id/detailsFoodItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFoodItem"
+        android:name="com.example.menufood.ui.food.DetailsFoodItem"
+        android:label="Food Details"
+        tools:layout="@layout/fragment_details_food_item">
+
+        <argument
+            android:name="foodId"
+            app:argType="integer" />
+    </fragment>
 </navigation>
